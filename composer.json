@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/Xt_Promotional",
+    "type": "magento-module",
+    "license": "Open-Software-License-(OSL)",
+    "homepage": "",
+    "description": "Ability to assign store specific Promotional Offer.",
+    "authors": [
+    {
+        "name": "Rik Sen",
+        "email": "pm@hire-developer.co.uk"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

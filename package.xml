@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>Xt_Promotional</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license uri="http://opensource.org/licenses/osl-3.0.php">Open Software License (OSL)</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Ability to assign store specific Promotional Offer.</summary>
+    <description>This module will allow the E-Commerce administrator to choose store specific different promotional product and can show those products on home page or left/right panel or any specific CMS page for individual store.</description>
+    <notes>This extension is a stable version.</notes>
+    <authors><author><name>Rik Sen</name><user>pmgr</user><email>pm@hire-developer.co.uk</email></author></authors>
+    <date>2013-02-01</date>
+    <time>13:46:26</time>
+    <contents><target name="magelocal"><dir name="XT"><dir name="Promotional"><dir name="Block"><dir name="Adminhtml"><dir name="Promotional"><dir name="Edit"><file name="Form.php" hash="3dc0a9d75186ca93e4c4e01557b1fc8b"/><dir name="Tab"><file name="Grid.php" hash="ec3a9c0c22743ff7bc55ca2cc12401af"/><file name="Store.php" hash="c9d5b5d918fde891f128e19cb3e61e6c"/></dir><file name="Tabs.php" hash="4a53066a63481848a498092832ff6a16"/></dir><file name="Edit.php" hash="f7efe7476ca0c5948879f93f8a2fff42"/><file name="Grid.php" hash="4dcb107b72e0446f0c008a5fbbdf745c"/></dir><file name="Promotional.php" hash="dd6224b54ab0d3c08308aa82f7b6c96e"/></dir><file name="Promotional.php" hash="59c291c4be09cba129b21af4e8d3f788"/></dir><dir name="Helper"><file name="Data.php" hash="3565b9e87dde00a5ca8d7d02dd1b4e17"/></dir><dir name="Model"><file name="Grid.php" hash="a54b43fe83045887857f89af29f56f3b"/><dir name="Mysql4"><dir name="Grid"><file name="Collection.php" hash="9c9167fd73abdb6538a0f72d0d9ab8e2"/></dir><file name="Grid.php" hash="c26f0289f6c0a27cf663048b29c5bce0"/><dir name="Promotional"><file name="Collection.php" hash="4d2c44c7022a3c0e59cf1e6a0d125ea8"/></dir><file name="Promotional.php" hash="3cb7bcb15a5fbcaa7991a516680f4b1f"/></dir><file name="Promotional.php" hash="6498fc5416c3b7371a4acacb2ccdbfa9"/></dir><dir name="controllers"><dir name="Adminhtml"><file name="PromotionalController.php" hash="e74fc550e5a058941c0270aabe50080d"/></dir></dir><dir name="etc"><file name="config.xml" hash="5f425528cd704088dd8309fb9ed0a41a"/></dir><dir name="sql"><dir name="promotional_setup"><file name="mysql4-install-0.1.0.php" hash="280613ee85904b4b52d494bd6094ba15"/></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="XT_Promotional.xml" hash="53d8881efa35d15a07ba409d43d8c74a"/></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="promotional.xml" hash="29be8491aab784820ab4653f5c39b086"/></dir><dir name="template"><dir name="promotional"><file name="promotional.phtml" hash="c298d5e44076d663a7ab5349b7cc8a9a"/></dir></dir></dir></dir></dir><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="layout"><file name="promotional.xml" hash="a8bea054f1796766d91fe5481a0e4fdd"/></dir><dir name="template"><dir name="promotional"><file name="stores.phtml" hash="d921ff4c2355268b92764a3615902235"/></dir></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

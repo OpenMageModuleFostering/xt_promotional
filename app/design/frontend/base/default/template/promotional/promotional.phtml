@@ -1,0 +1,61 @@
+ <?php
+    //echo Mage::app()->getStore()->getId();
+	$collection = Mage::getModel('promotional/grid')->getCollection()->addFieldToFilter('store_id',Mage::app()->getStore()->getId())->addFieldToFilter('promotional_id', array('eq' => '1'))->setOrder('position','ASC');	
+	//print_r($collection);
+?>
+<div class="bstseller-main">
+  <h2>Promotional Products</h2>
+  <div class="bstseller-contain-outer">
+    <div class="bstseller-contain">
+     <?php if(count($collection) > 0){ $count = 1;?>
+     <?php
+		foreach($collection as $col)
+		{
+		  if($count<=4)
+		  {
+			$productModel = Mage::getModel('catalog/product')->load($col->getProductId());	
+			if($productModel->getEntityId()):
+			$price = Mage::helper('core')->currency($productModel->getFinalPrice(),true,false);		
+	 ?>
+      <div class="bstseller-row">
+        <div class="thumb-img"><a href="<?php echo $productModel->getProductUrl();?>"><img src="<?php echo $this->helper('catalog/image')->init($productModel, 'small_image')->resize(80); ?>" width="80" height="80" alt="<?php echo $this->stripTags($this->getImageLabel($productModel, 'small_image'), null, true) ?>" /></a></div>
+        <div class="bstsell-info">
+          <h2><a href="<?php echo $productModel->getProductUrl();?>"><?php echo $productModel->getName();?></a></h2>
+          <p><?php echo $productModel->getListingOverview();?></p>
+          <h3 class="price"><?php echo $price;?></h3>
+        </div>
+      </div>
+       <?php endif; } ?> 
+      <?php $count++;} ?> 
+     <?php } ?> 
+      
+      
+      <?php /*?><div class="bstseller-row">
+        <div class="thumb-img"><img src="<?php echo $this->getSkinUrl('images/bstsell-pro2.jpg')?>" alt="" /></div>
+        <div class="bstsell-info">
+          <h2><a href="#">ShapeSmart DECarb</a></h2>
+          <p>60 Tablet Box</p>
+          <h3 class="price">&pound;25.03</h3>
+        </div>
+      </div>
+      <div class="bstseller-row">
+        <div class="thumb-img"><img src="<?php echo $this->getSkinUrl('images/bstsell-pro3.jpg')?>" alt="" /></div>
+        <div class="bstsell-info">
+          <h2><a href="#">Slimming.com HGH Advanced</a></h2>
+          <p>120 Capsule Box</p>
+          <h3 class="price">&pound;34.67</h3>
+        </div>
+      </div>
+      <div class="bstseller-row">
+        <div class="thumb-img"><img src="<?php echo $this->getSkinUrl('images/bstsell-pro4.jpg')?>" alt="" /></div>
+        <div class="bstsell-info">
+          <h2><a href="#">Goldshield LIPObind</a></h2>
+          <p>60 Tablet Box</p>
+          <h3 class="price">&pound;13.90</h3>
+        </div>
+      </div><?php */?>
+      
+      
+    </div>
+  </div>
+</div>

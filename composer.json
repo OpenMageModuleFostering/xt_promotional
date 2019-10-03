@@ -1,7 +1,7 @@
 {
-    "name": "OpenMageModuleFostering\/Xt_Promotional",
+    "name": "openmage-module-fostering\/xt_promotional",
     "type": "magento-module",
-    "license": "Open-Software-License-(OSL)",
+    "license": "OSL-3.0",
     "homepage": "",
     "description": "Ability to assign store specific Promotional Offer.",
     "authors": [
